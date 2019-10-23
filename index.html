@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Population Genetics Lab</title>
+  <link rel="shortcut icon" href="Extra/dna_png_0.png" />
+  <link rel="stylesheet" type="text/css" href="Extra/style.css">
+</head>
+<body>
+
+  <h1></h1>
+  <div class = 'masterform'>
+    <div class='forms' id='population'>
+      <p class = "formText">
+        Generation Size:
+        <input type="number" name="populationSize" id="populationSize" value="24">
+    </p>
+        <p class = "formText">
+        Number of Generations:
+        <input type="number" name="NumberOfGenerations" id="NumberOfGenerations" value="8">
+    </p>
+        <p class = "formText">
+        Initial Frequency of R Allele:
+        <input type="number" name="frequencyOfR" id="frequencyOfR" value="0.5" step = ".1">
+    </p>
+      <p class = "formText survivalChance" id= "survivalChance">
+        Dominant Phenotype Survival Chance:
+        <input type="number" name="domChance" id="domChance" value="100" min="0" max="100">
+        <span class = "percent">%</span>
+    </p>
+      <p class = "formText survivalChance" id= "survivalChance">
+        Recessive Phenotype Survival Chance:
+        <input type="number" name="domChance" id="recChance" value="100" min="0" max="100">
+        <span class = "percent">%</span>
+      </p>
+      <button id = 'btn'>Run!</button>
+    </div>
+  </div>
+</form>
+<div id = "button">
+</div>
+<div class = "buttonContainer">
+  <button id="graphButton" class = "button">Overview</button>
+  <button id="resultsButton" class = "button">Details</button>
+</div>
+<div id="chartContainer">
+</div>
+<!-- Trigger/Open The Modal -->
+
+<div id="details" class="modal">
+  <div id="results">No Data</div>
+</div>
+  <script type="text/javascript" src="Extra/javascript.js"></script>
+  <script src="libraries/canvasjs.min.js" type="text/javascript"></script>
+</body>
+</html>
